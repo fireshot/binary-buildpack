@@ -9,11 +9,11 @@ mkdir -p "$DEPS_DIR/0"
 mkdir -p "$BUILD_DIR/.profile.d"
 
 echo "Installing VSTS Dependencies"
-sudo apt-get update
-sudo apt-get install -y --no-install-recommends software-properties-common
-sudo apt-add-repository ppa:git-core/ppa
-sudo apt-get update 
-sudo apt-get install -y --no-install-recommends 
+apt-get update
+apt-get install -y --no-install-recommends software-properties-common
+apt-add-repository ppa:git-core/ppa
+apt-get update 
+apt-get install -y --no-install-recommends 
         curl 
         git 
         jq 
@@ -21,7 +21,7 @@ sudo apt-get install -y --no-install-recommends
         libicu55 
         libunwind8 
  curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | bash
- sudo apt-get install -y --no-install-recommends git-lfs 
+ apt-get install -y --no-install-recommends git-lfs 
 
 echo "export DEPS_DIR=\$HOME/.cloudfoundry" > "$BUILD_DIR/.profile.d/0000_set-deps-dir.sh"
 
