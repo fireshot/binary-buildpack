@@ -1,2 +1,2 @@
 $version = Get-Content "$PSScriptRoot\..\VERSION"
-Write-Host "-----> Binary Buildpack version $version"
+Write-Host "-----> Custom Binary Buildpack by Ahmed Nada version $version"
